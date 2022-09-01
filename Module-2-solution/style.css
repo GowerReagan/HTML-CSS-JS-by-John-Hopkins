@@ -1,0 +1,105 @@
+* {
+   content: box-model;
+ }
+ 
+ body {
+   font-family: Helvetica Neue, Helvetica, Arial;
+   font-size: 1rem;
+   background-color: #fff8e7;
+ }
+ 
+ p {
+  position: absolute;
+  top: 20px;
+  padding: .5rem 1.2rem;
+  text-align: left;
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ 
+ 
+ .title {
+   text-align: center;
+   margin-top: 25px;
+   font-family: Helvetica Neue, Helvetica, Arial;
+   font-size: 2rem;
+   
+ }
+
+.boxes1, .boxes2, .boxes3 {
+  height: 200px;
+  width: 30.33%;
+  float: left;
+  background-color: #b43434;
+  text-align: center;
+  margin: 0 1%;
+  position: relative;
+  border: 3px solid #FFCA62;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+.chicken, .Beef, .Sushi{
+  position: absolute;
+  top: 0px;;
+  right: 0px;
+  margin: 0px;
+  padding: 5px 15px;
+  background-color: #A50009;
+  color: white;
+}
+
+ @media (min-width: 1024px) {
+   .boxes1{
+  	  margin-top: 45px;
+  	}
+  	.boxes2 {
+  	  margin-top: 45px;
+  	}
+  	.boxes3 {
+  	  margin-top: 45px;
+  	}
+ }
+ 
+@media (min-width: 500px) and (max-width: 991px) {
+  	#container {
+  	  width: 100%;
+  	}
+ 	.boxes1{
+  	  width: 46.66%;
+  	  margin: 10px 1%; 
+  	  
+  	}
+  	.boxes2 {
+  	  width: 46.66%;
+  	  margin: 10px 1%;
+  	}
+  		.boxes3 {
+  	  width: 96.66%;;
+	  margin: 5px 1%
+  	}
+}
+   /*Temp Mobile screen size*/
+   @media (min-width: 0px) and (max-width: 475px) {
+  .boxes3 {
+    
+  	}
+  	
+  	#container {
+  	  width: 100%;
+  	}
+  	.boxes1{
+  	  width: 90%;
+  	  margin: 10px 15px;
+  	}
+  		.boxes2 {
+  	  width: 90%;
+  	  margin: 10px 15px;
+  	}
+  		.boxes3 {
+  	  width: 90%;
+  	  margin: 10px 15px;
+  	}
+}
